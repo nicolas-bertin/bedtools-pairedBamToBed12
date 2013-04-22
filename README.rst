@@ -1,22 +1,20 @@
-==============================
-          BEDTools         
-==============================
+=================================================
+   (Paired-End Bam to BED12 modified) BEDTools         
+=================================================
 
-Created by Aaron Quinlan Spring 2009.
+Addition of a pairedBamToBed12 utility by Nicolas Bertin (OSC RIKEN Yokohama) to BEDTools Created by Aaron Quinlan Spring 2009.
 
 Copyright 2009,2010,2011 Aaron Quinlan. All rights reserved.
-
-Stable releases: http://code.google.com/p/bedtools
-
-Repository:      https://github.com/arq5x/bedtools
-
 Released under GNU public license version 2 (GPL v2).
+
+Repository:      https://github.com/nicolas-bertin/bedtools-pairedBamToBed12
 
 
 Summary
 -------
 BEDTools is a collection of utilities for comparing, summarizing, and 
 intersecting genomic features in BED, GTF/GFF, VCF and BAM formats. 
+In this branch is added *pairedBamToBed12* which converts a name sorted paired-end sequences bam file into a 2-block bed12 formatted file.
 
 
 Manual
@@ -26,6 +24,7 @@ See the extensive PDF manual included at: http://code.google.com/p/bedtools/down
 This manual covers many common usage examples.  There are also examples available at:
 http://code.google.com/p/bedtools/wiki/Usage
 http://code.google.com/p/bedtools/wiki/UsageAdvanced
+Note that the manual does not reflect the pairedBamToBed12 addition.
 
 Installation
 ------------
@@ -69,4 +68,5 @@ Utility                    Description
 *slopBed*                  Adjusts each BED entry by a requested number of base pairs. 
 *sortBed*                  Sorts a BED file by chrom, then start position. Other ways as well. 
 *linksBed*                 Creates an HTML file of links to the UCSC or a custom browser. 
+*pairedBamToBed12*         Convert a name sorted paired-end sequences bam file into a 2-block bed12 formatted file.
 =========================  =======================================================================================================

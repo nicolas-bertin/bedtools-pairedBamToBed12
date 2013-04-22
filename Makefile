@@ -1,7 +1,10 @@
-# ==========================
+# =================================
 # BEDTools Makefile
 # (c) 2009 Aaron Quinlan
-# ==========================
+#
+# modified by nbertin to accomodate 
+# pairedBamToBed12 (Apr11)
+# =================================
 
 # define our object and binary directories
 export OBJ_DIR	= obj
@@ -14,6 +17,7 @@ export LIBS		= -lz
 
 
 SUBDIRS = $(SRC_DIR)/annotateBed \
+		  $(SRC_DIR)/pairedBamToBed12 \
 		  $(SRC_DIR)/bamToBed \
 		  $(SRC_DIR)/bedToBam \
 		  $(SRC_DIR)/bedToIgv \
